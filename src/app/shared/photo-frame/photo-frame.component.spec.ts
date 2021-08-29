@@ -1,25 +1,24 @@
+import { PhotoFrameModule } from './photo-frame.module';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PhotoFrameComponent } from './photo-frame.component';
 
-describe('PhotoFrameComponent', () => {
+describe(PhotoFrameComponent.name, () => {
   let component: PhotoFrameComponent;
   let fixture: ComponentFixture<PhotoFrameComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PhotoFrameComponent ]
-    })
-    .compileComponents();
+      imports: [PhotoFrameModule],
+    }).compileComponents();
   });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(PhotoFrameComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create component', () => {
     expect(component).toBeTruthy();
   });
 });
