@@ -9,8 +9,4 @@ describe('PhotoBoardService', () => {
     TestBed.configureTestingModule({});
     service = TestBed.inject(PhotoBoardService);
   });
-
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
 });
